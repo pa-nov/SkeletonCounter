@@ -29,11 +29,7 @@
 
         public static string GetNiceText(int value, string oneText, string smallText, string largeText)
         {
-            if (Math.Floor((float)value / 10) % 10 == 1)
-            {
-                return value + " " + largeText;
-            }
-            else
+            if (Math.Floor((float)value / 10) % 10 != 1)
             {
                 if (value % 10 == 1)
                 {
@@ -43,9 +39,8 @@
                 {
                     return value + " " + smallText;
                 }
-
-                return value + " " + largeText;
             }
+            return value + " " + largeText;
         }
         public static string GetNiceNumber(int number)
         {

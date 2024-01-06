@@ -51,7 +51,6 @@ namespace SkeletonCounter
             TotalCount.Text = "Всего Древних монет: " + totalCount[0];
             TotalCountSkeleton.Text = "Всего Древних скелетов: " + totalCount[1];
             TotalCountReroll.Text = "Всего реролов: " + totalCount[2];
-
         }
     }
 }
